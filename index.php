@@ -3,10 +3,10 @@
 <head>
     <title>Test FIDO</title>
     <meta charset=utf-8/>
-    <script src="jquery-1.11.1.min.js"></script>
-    <script src="jquery.splitter-0.14.0.js"></script>
-    <link rel="stylesheet" href="jquery.splitter.css">
-    <link rel="stylesheet" href="styles.css">
+    <script src="js/jquery-1.11.1.min.js"></script>
+    <script src="js/jquery.splitter-0.14.0.js"></script>
+    <link rel="stylesheet" href="css/jquery.splitter.css">
+    <link rel="stylesheet" href="css/styles.css">
     <script>
         function panelize() {
             var screen_height = $(window).height();
@@ -110,7 +110,7 @@ if (isset($_FILES['file'])) {
             // relever le point de départ
             $timestart = microtime(true);
             // chargement de la librairie
-            require_once 'fido.php';
+            require_once 'lib/Fido.php';
             if (isset($_POST['verbose'])) {
                 // affichage des infos du navigateur
                 $infos = "\nInformations navigateur :\n<p class='important'>";

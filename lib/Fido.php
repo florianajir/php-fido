@@ -46,6 +46,11 @@ class Fido {
     const nomatchPrintf = '-nomatchprintf "KO,%(info.filename)s\n" ';
 
     /**
+     * Directory Separator
+     */
+    const DS = '/';
+
+    /**
      * Analyse un fichier, une archive ou un dossier
      * avec des arguments passés en paramètre
      * @param string $target Adresse du fichier/dossier
@@ -272,7 +277,7 @@ class Fido {
         // pronomVersion
         $pronomSignatureFilename = $domDoc->getElementsByTagName('pronomSignature')->item(0)->nodeValue;
 
-        return dirname($xmlVersionsFileUri) . DS . $pronomSignatureFilename;
+        return dirname($xmlVersionsFileUri) . self::DS . $pronomSignatureFilename;
     }
 
     /**
