@@ -1,0 +1,31 @@
+body {
+    font-size: 0.9em;
+    padding: 0;
+    margin: 0;
+}
+#saisie {
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+#debug {
+    background-color: black;
+    color: chartreuse;
+    font-size: 1.1em;
+    padding: 10px;
+    box-sizing: border-box;
+    word-wrap: break-word;
+    margin: 0;
+}
+
+h1 {
+    font-size: 1.2em;
+    border-bottom: 1px solid #ccc;
+}
+.important {
+    font-weight: bold;
+}
+
+fieldset {
+    margin-bottom: 10px;
+}
